@@ -1,19 +1,17 @@
 class Megasoft {
 
- spellchecker(sentance){
+ spellchecker(sentence){
   var incorrect = "~"
   var wordbank = ["cat","The","dog","barked","These", "words" ,"are", "spelt", "correctly" ]
 
- var sentanceArr = sentance.split(" ")
- for ( var i=0; i < sentanceArr.length;i++) {
-
-  if (!wordbank.includes(sentanceArr[i])){
-    sentanceArr[i] = incorrect + sentanceArr[i] + incorrect
-    console.log(sentanceArr[i])
+ var sentenceArr = sentence.split(" ")
+ for ( var i=0; i < sentenceArr.length;i++) {
+  sentence
+  if (!wordbank.includes(sentenceArr[i])){
+    sentenceArr[i] = incorrect + sentenceArr[i] + incorrect
+    }
   }
-}
-
- return sentance = sentanceArr.join(" ")
+ return sentence = sentenceArr.join(" ")
   
  }
  
